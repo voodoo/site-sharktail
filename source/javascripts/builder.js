@@ -2,7 +2,33 @@ var $l = console.log.bind(console);
 
 
 $(function(){
-  
+
+  $l('na')
+
+  $('textarea').on('keydown',function(e){
+    //$(e)
+    //e.preventDefault()
+    parse(this.value)
+
+  })
+
+  function parse(s){
+    $.each(s.split(/\n/), function(i, v){
+      if(v == "") {
+
+      } else {
+        $l(v)
+      }
+
+    })
+
+  }
+  $('#aBM').on('click',function(e){
+    $(e)
+    e.preventDefault()
+    console.log(e)
+
+  })
   setTimeout(function(){ // so we can update after garlic update
     $('.other-value').each(function(){
         if($(this).find('input').val() !== '')

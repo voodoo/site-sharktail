@@ -14,8 +14,9 @@
 
   %body(data-spy="scroll" data-target=".navbar-default")
     %a(name="builder")
-      #builder
+    #builder
       .container= yield
+      builder
     %script(src="/js/bootstrap.min.js")
     %script(src="/javascripts/garlic.min.js")
     %script(src="/javascripts/builder.js")

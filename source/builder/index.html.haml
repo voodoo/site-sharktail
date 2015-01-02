@@ -1,4 +1,10 @@
 = partial('builder/partials/nav')
+
+%p= link_to "Bookmarklet", "?" + ("v=u" * 300), id: 'aBM'
+
+%textarea= partial("builder/partials/text")
+
+
 %h1 
   Builder
   %small.text-muted 
