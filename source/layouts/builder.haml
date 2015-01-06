@@ -34,13 +34,13 @@
             %li
               %a{"data-scroll" => "", :href => "#neck"} Neck
             %li
-              %a{"data-scroll" => "", :href => "#preview"} Preview  
+              %a{"data-scroll" => "", :href => "#head"} Head  
             %li
               %a{:href => "#", class: 'aBookmarklet'} [Save]
             %li
-              %p.navbar-text &lt;-- Drag "Save" to your bookmarks                
+              %small.navbar-text.text-muted.hidden-sm.hidden-xs &lt;-- Drag "[Save]" to your bookmarks                
     %a(name="builder")
     .container= yield
-    = javascript_include_tag "/js/bootstrap.min.js", "/javascripts/jq-query.js", "/javascripts/builder.js"
+    = javascript_include_tag "/js/bootstrap.min.js", "/javascripts/jq-query.js", "/javascripts/builder.js", "/javascripts/jq-hash-serialize.js"
 
 
