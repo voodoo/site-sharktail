@@ -1,15 +1,9 @@
 set :css_dir,     'css'
 set :js_dir,      'js'
 set :images_dir,  'img'
+
 activate :directory_indexes
-
-with_layout :builder do
-  page "/builder/*"
-end
-
-# Use relative URLs
 activate :relative_assets
-
 set :relative_links, true
 
 # Reload the browser automatically whenever files change
@@ -29,10 +23,10 @@ end
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
@@ -54,9 +48,9 @@ activate :deploy do |deploy|
   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
 
-with_layout :builder do
-  page "/builder/*"
-end
+# with_layout :builder do
+#   page "/builder/*"
+# end
 
 ###
 # Compass
