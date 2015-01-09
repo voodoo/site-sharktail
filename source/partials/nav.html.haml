@@ -9,7 +9,7 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand{"data-scroll" => "", :href => "#home"}
-        = image_tag "/img/shark/logo/logo.png"
+        = image_tag "/img/logo/small.png"
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li
@@ -21,8 +21,8 @@
         %li
           %a{"data-scroll" => "", :href => "#ergo-gallery"} Ergonomic
         %li
+          = link_to "Design", "http://design.sharktailguitars.com", target: '_blank'
+        %li
           %a{"data-scroll" => "", :href => "#scene"} See
         %li
-          = link_to "Build", "http://builder.sharktailguitars.com", target: '_blank'
-        %li
-          %a{:href => "http://talk.sharktailguitars.com", target: '_blank'} Talk                  
+          %a{"data-scroll" => "", :href => "#talk", target: '_blank'} Talk                  
