@@ -1,3 +1,3 @@
 # What
 
-Sharktail Guitars  [public website](http://sharktailguitars.com).
+Sharktail Guitars  [public website](https://voodoo.github.io/site-sharktail/).
